@@ -1,0 +1,614 @@
+/* =============================
+  GLOBAL STYLES
+============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  background-color: rgb(248, 241, 215);
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+/* =============================
+  NAVBAR
+============================= */
+
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(63, 60, 52, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Inner Container */
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.header-logo {
+  width: 250px;
+  height: 45px;
+  background: url("../images/The Living Islands Logo.png") no-repeat center center;
+  background-size: contain;
+  transition: transform 0.3s;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover,
+.nav-item.active a {
+  color: rgba(219, 86, 35, 1);
+}
+
+/* =============================
+  HERO
+============================= */
+.hero {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-bottom: 8px solid rgba(63, 60, 52, 1);
+  position: relative;
+}
+
+.hero img.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* =============================
+  ABOUT PHILIPPINE WILDLIFE
+============================= */
+.about-philippine-wildlife {
+  position: relative;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-philippine-wildlife::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/Background.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-text {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-text h2 {
+  font-family: 'Alegreya Sans SC', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 0 0 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 95%;
+  height: auto;
+  object-fit: contain;
+  transform: translateY(-10px);
+  opacity: 0.95;
+}
+
+/* =============================
+  FAUNA SECTION
+============================= */
+.fauna-section {
+  position: relative;
+  width: 100%;
+  height: 237px;
+  overflow: hidden;
+  background-color: rgba(63, 60, 52, 1);
+}
+
+.fauna-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 60, 52, 1);
+  z-index: 1;
+}
+
+.fauna-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Fauna Section.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.fauna-content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.fauna-content h2 {
+  font-family: 'Alegreya Sans SC', serif;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.fauna-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 1200px;
+  opacity: 0.5;
+}
+
+/* Fauna Cards */
+.fauna-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.fauna-cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Background.png") center/cover no-repeat;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.fauna-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.fauna-card {
+  position: relative;
+  background: rgba(63, 60, 52, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 410px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fauna-card .map-overlay {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url("../images/Philippines Map.png") center/contain no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fauna-card h3 {
+  font-family: 'Alegreya SC', serif;
+  font-weight: normal;
+  font-size: 32px;
+  color: #fff;
+  margin: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.fauna-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #fff;
+  opacity: 0.7;
+  margin: 0 22px;
+  z-index: 2;
+  position: relative;
+}
+
+.fauna-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 2;
+}
+
+/* =============================
+  FLORA SECTION
+============================= */
+.flora-section {
+  position: relative;
+  width: 100%;
+  height: 237px;
+  overflow: hidden;
+  background-color: rgba(63, 60, 52, 1);
+}
+
+.flora-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 60, 52, 1);
+  z-index: 1;
+}
+
+.flora-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Flora Section.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.flora-content {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.flora-content h2 {
+  font-family: 'Alegreya Sans SC', serif;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.flora-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 1200px;
+  opacity: 0.5;
+}
+
+/* Flora Cards */
+.flora-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.flora-cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Background.png") center/cover no-repeat;
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.flora-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.flora-card {
+  position: relative;
+  background: rgba(63, 60, 52, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 410px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flora-card .map-overlay {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: url("../images/Philippines Map.png") center/contain no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flora-card h3 {
+  font-family: 'Alegreya SC', serif;
+  font-weight: normal;
+  font-size: 32px;
+  color: #fff;
+  margin: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.flora-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #fff;
+  opacity: 0.7;
+  margin: 0 22px;
+  z-index: 2;
+  position: relative;
+}
+
+.flora-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 2;
+}
+
+/* =============================
+  CARD HOVER EFFECTS (Fauna & Flora)
+============================= */
+.fauna-card,
+.flora-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.fauna-card:hover,
+.flora-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+}
+
+.fauna-card img,
+.flora-card img {
+  transition: transform 0.5s ease;
+}
+
+.fauna-card:hover img,
+.flora-card:hover img {
+  transform: scale(1.05);
+}
+
+.fauna-card p,
+.flora-card p {
+  transition: opacity 0.4s ease;
+}
+
+.fauna-card:hover p,
+.flora-card:hover p {
+  opacity: 0.85;
+}
+
+/* =============================
+  FOOTER STYLING
+============================= */
+.site-footer {
+  background-color: rgba(63, 60, 52, 1);
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.footer-logo-column {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  display: block;
+  width: 250px;
+  height: 45px;
+  background: url("../images/The Living Islands Logo.png") no-repeat center center;
+  background-size: contain;
+  margin-bottom: 10px;
+  opacity: 1 !important;
+}
+
+.footer-logo-column p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 13px;
+  margin-top: 6px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.footer-column {
+  flex: 2 2 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+.footer-column a {
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column a:hover {
+  opacity: 1;
+}
+
+.contact-list li {
+  margin-bottom: 5px;
+}
+
+.social-links-inline {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.social-links-inline img {
+  width: 22px;
+  height: 22px;
+  opacity: 1 !important;
+  transition: transform 0.3s ease;
+}
+
+.social-links-inline img:hover {
+  transform: scale(1.05);
+}
