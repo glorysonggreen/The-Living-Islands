@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | The Living Islands</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link href="./css/contact.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="header-logo"></a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html">HOME</a></li>
+        <li class="nav-item"><a href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a href="wildlife.html">WILDLIFE</a></li>
+        <li class="nav-item"><a href="conservation.html">CONSERVATION</a></li>
+        <li class="nav-item active"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <img src="images/Hero.png" alt="Contact Hero Image" class="hero-image">
+  </div>
+
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-info">
+        <h1>Contact Us!</h1>
+        <p>
+          Have a question about Philippine wildlife? Want to collaborate on conservation or educational efforts?
+          We'd love to hear from you. Use the form below or reach out directly through email or social media.
+        </p>
+
+        <div class="contact-details">
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+639694610317">+63 969 461 0317</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:thelivingislands@email.com">thelivingislands@email.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="contact-form">
+        <form id="contactForm">
+          <fieldset>
+            <legend>Send Us a Message</legend>
+
+            <!-- First & Last Name -->
+            <div class="form-row names">
+              <input type="text" id="firstName" name="firstName" placeholder="First Name*" required />
+              <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required />
+            </div>
+
+            <!-- Email above Contact Number -->
+            <div class="form-row email-contact">
+              <input type="email" id="email" name="email" placeholder="Email*" required />
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required />
+            </div>
+
+            <!-- Message -->
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+              <button type="submit" class="submit-btn">Submit</button>
+              <button type="reset" class="reset-btn">Reset</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-column footer-logo-column">
+        <a href="index.html" class="footer-logo"></a>
+        <p>Copyright © TheLivingIslands 2025 All rights reserved</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="wildlife.html">Wildlife</a></li>
+          <li><a href="conservation.html">Conservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <ul class="contact-list">
+          <li><a href="tel:+639694610317">+63 969 461 0317</a></li>
+          <li><a href="mailto:thelivingislands@email.com">thelivingislands@email.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow us on</h3>
+        <div class="social-links-inline">
+          <a href="https://www.facebook.com/christructure" target="_blank" rel="noopener noreferrer">
+            <img src="images/Facebook Logo.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/christructure" target="_blank" rel="noopener noreferrer">
+            <img src="images/Instagram Logo.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./js/contact.js"></script>
+</body>
+</html>
