@@ -25,6 +25,14 @@
   <nav class="navbar">
     <div class="navbar-container">
       <a href="index.html" class="header-logo"></a>
+
+      <!-- Hamburger Menu -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
       <ul class="nav-links">
         <li class="nav-item active"><a href="index.html">HOME</a></li>
         <li class="nav-item"><a href="about.html">ABOUT</a></li>
@@ -38,17 +46,17 @@
   <!-- ============================
         HERO / BANNER SECTION
   ============================ -->
-  <div class="hero">
+  <section class="hero">
     <img src="images/Hero.png" alt="Index Hero Image" class="hero-image" />
-  </div>
+  </section>
 
   <!-- ============================
         MAIN CONTENT SECTION
   ============================ -->
   <section class="index-section">
     <div class="index-content">
-      
-      <!-- INTRO TEXT -->
+
+      <!-- ===== INTRODUCTION ===== -->
       <div class="intro">
         <h1>Welcome to The Living Islands – A Journey Into Philippine Nature</h1>
         <p>This website aims to showcase the rich and diverse wildlife and plant life found across the 7,600+ islands of the Philippines. From tropical rainforests to coral reefs, these ecosystems are home to some of the most unique and extraordinary species on Earth.</p>
@@ -57,7 +65,7 @@
         <p>Start your journey through the Living Islands and discover the breathtaking flora and fauna that make the Philippines one of the planet’s most precious ecological treasures.</p>
       </div>
 
-      <!-- NAVIGATION CARDS -->
+      <!-- ===== NAVIGATION CARDS ===== -->
       <div class="cards">
         <a href="wildlife.html" class="card">
           <img src="images/Wildlife Card.png" alt="Explore Wildlife" />
@@ -74,7 +82,7 @@
           <div class="overlay"><h2>Get in Touch</h2></div>
         </a>
       </div>
-      
+
     </div>
   </section>
 
@@ -83,7 +91,7 @@
   ============================ -->
   <footer class="site-footer">
     <div class="footer-container">
-      
+
       <!-- Footer Logo + Copyright -->
       <div class="footer-column footer-logo-column">
         <a href="index.html" class="footer-logo"></a>
@@ -123,7 +131,10 @@
           </a>
         </div>
       </div>
+
     </div>
   </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>
