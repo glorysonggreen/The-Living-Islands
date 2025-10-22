@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | The Living Islands</title>
+  <meta name="description" content="Get in touch with The Living Islands to ask questions, collaborate on Philippine wildlife and conservation projects, or connect via email and social media." />
+  <title>The Living Islands - Contact</title>
 
+  <!-- ============================
+        GOOGLE FONTS
+  ============================ -->
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <!-- ============================
+        CSS
+  ============================ -->
   <link href="./css/styles.css" rel="stylesheet" />
-  <link href="./css/contact.css" rel="stylesheet" />
+  <link href="./css/print.css" rel="stylesheet" media="print" />
+
+  <!-- ============================
+        FAVICON
+  ============================ -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  <link rel="icon" sizes="512x512" href="images/android-chrome-512.png" />
 </head>
 
 <body>
+  <!-- ============================
+        NAVIGATION BAR
+  ============================ -->
   <nav class="navbar">
     <div class="navbar-container">
       <a href="index.html" class="header-logo"></a>
@@ -37,14 +55,20 @@
     </div>
   </nav>
 
-  <div class="hero">
-    <img src="images/Hero.png" alt="Contact Hero Image" class="hero-image">
-  </div>
+  <!-- ============================
+        HERO / BANNER SECTION
+  ============================ -->
+  <section class="hero">
+    <img src="images/Hero.png" alt="Contact Hero Image" class="hero-image" />
+  </section>
 
+  <!-- ============================
+        CONTACT SECTION
+  ============================ -->
   <section class="contact-section">
     <div class="contact-container">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT SIDE: Contact Info -->
       <div class="contact-info">
         <h1>Contact Us!</h1>
         <p>
@@ -64,7 +88,7 @@
         </div>
       </div>
 
-      <!-- RIGHT SIDE -->
+      <!-- RIGHT SIDE: Contact Form -->
       <div class="contact-form">
         <form id="contactForm">
           <fieldset>
@@ -76,7 +100,7 @@
               <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required />
             </div>
 
-            <!-- Email above Contact Number -->
+            <!-- Email & Phone -->
             <div class="form-row email-contact">
               <input type="email" id="email" name="email" placeholder="Email*" required />
               <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required />
@@ -97,14 +121,19 @@
     </div>
   </section>
 
+  <!-- ============================
+        FOOTER
+  ============================ -->
   <footer class="site-footer">
     <div class="footer-container">
 
+      <!-- Footer Logo + Copyright -->
       <div class="footer-column footer-logo-column">
         <a href="index.html" class="footer-logo"></a>
-        <p>Copyright © TheLivingIslands 2025 All rights reserved</p>
+        <p>© 2025 The Living Islands. All rights reserved.</p>
       </div>
 
+      <!-- Footer Menu -->
       <div class="footer-column">
         <h3>Menu</h3>
         <ul>
@@ -116,6 +145,7 @@
         </ul>
       </div>
 
+      <!-- Contact Info -->
       <div class="footer-column">
         <h3>Contact Info</h3>
         <ul class="contact-list">
@@ -124,6 +154,7 @@
         </ul>
       </div>
 
+      <!-- Social Links -->
       <div class="footer-column">
         <h3>Follow us on</h3>
         <div class="social-links-inline">
@@ -139,7 +170,11 @@
     </div>
   </footer>
 
-  <script src="./js/contact.js"></script>
-  <script src="./js/menu.js"></script>
+  <!-- ============================
+        JAVASCRIPT
+  ============================ -->
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/contact.js" defer></script>
+  <script src="./js/animations.js" defer></script>
 </body>
 </html>

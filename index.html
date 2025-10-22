@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index | The Living Islands</title>
+  <meta name="description" content="Explore the rich biodiversity of the Philippines with The Living Islands. Discover unique wildlife, lush forests, and vibrant marine life across 7,600+ islands, and learn how to protect these natural treasures." />
+  <title>The Living Islands</title>
 
   <!-- ============================
         GOOGLE FONTS
@@ -13,9 +14,20 @@
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet" />
 
   <!-- ============================
-        MAIN CSS
+        CSS
   ============================ -->
   <link href="./css/styles.css" rel="stylesheet" />
+  <link href="./css/print.css" rel="stylesheet" media="print" />
+
+  <!-- ============================
+        FAVICON
+  ============================ -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  <link rel="icon" sizes="512x512" href="images/android-chrome-512.png" />
 </head>
 
 <body>
@@ -63,6 +75,16 @@
         <p>Whether it’s the mighty Philippine eagle, the gentle tamaraw, or the rare and beautiful Waling-Waling orchid, each species plays a vital role in our natural heritage. This site is dedicated to exploring and celebrating their stories — not just as biological wonders, but as symbols of culture, identity, and resilience.</p>
         <p>The Philippines is considered one of the world’s biodiversity hotspots, yet many of its species are found nowhere else and are under threat. Through vivid imagery, engaging facts, and informative content, The Living Islands hopes to inspire curiosity, respect, and a deeper connection with the natural world.</p>
         <p>Start your journey through the Living Islands and discover the breathtaking flora and fauna that make the Philippines one of the planet’s most precious ecological treasures.</p>
+      </div>
+
+      <!-- ===== VIDEO WRAPPER ===== -->
+      <div class="video-wrapper">
+        <video controls poster="media/The Living Islands Video.png">
+          <source src="media/The Living Islands Video.mp4" type="video/mp4">
+          <source src="media/The Living Islands Video.webm" type="video/webm">
+          <!-- Fallback text -->
+          Your browser does not support the video tag. Please update your browser.
+        </video>
       </div>
 
       <!-- ===== NAVIGATION CARDS ===== -->
@@ -135,6 +157,10 @@
     </div>
   </footer>
 
+  <!-- ============================
+        JAVASCRIPT
+  ============================ -->
   <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
