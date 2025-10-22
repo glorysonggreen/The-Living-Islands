@@ -1,0 +1,163 @@
+@media print {
+
+  /* ===== GENERAL STYLES ===== */
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    color: #000;
+    background: #fff !important;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1cm;
+    text-align: left;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  p, li, td, th, span, a {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 12pt !important;
+    color: #000 !important;
+    text-align: left;
+    margin: 0.2em 0;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+    margin: 1em 0 0.5em 0;
+    page-break-after: avoid;
+  }
+
+  ul, ol {
+    list-style-type: disc !important;
+    padding-left: 1.4em !important;
+    margin: 0.3em 0;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+    word-break: break-word;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100%;
+    margin: 0.8em 0;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    border: 1px solid #000 !important;
+    padding: 6px 10px !important;
+    vertical-align: top;
+  }
+
+  .page-break {
+    page-break-before: always !important;
+  }
+
+  /* ===== HIDE NON-PRINT ELEMENTS ===== */
+  img,
+  .hero-image,
+  .about-image img,
+  .navbar,
+  .menu-toggle,
+  .hero,
+  .cards,
+  .site-footer,
+  .social-links-inline,
+  .footer-logo,
+  form,
+  .orange-line,
+  .map-overlay {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  *, *::before, *::after {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  /* ===== CARD STRUCTURE ===== */
+  .about-card,
+  .fauna-card,
+  .flora-card,
+  .preserve-item,
+  .ngo-card {
+    display: contents !important; /* container disappears, children stay */
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+  }
+
+  @supports not (display: contents) {
+    .about-card,
+    .fauna-card,
+    .flora-card,
+    .preserve-item,
+    .ngo-card {
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+
+  /* ===== CARD CONTENT ===== */
+  .about-card h3,
+  .fauna-card h3,
+  .flora-card h3,
+  .preserve-item h3,
+  .ngo-card h3 {
+    font-weight: bold !important;
+    margin: 0.5em 0 0.2em 0;
+    text-align: left !important;
+  }
+
+  .about-card p,
+  .fauna-card p,
+  .flora-card p,
+  .preserve-item p,
+  .ngo-card p {
+    margin: 0.2em 0 !important;
+    text-align: left !important;
+  }
+
+  /* ===== HIDE CARD LINKS (e.g., "Learn More") ===== */
+  .about-card a,
+  .fauna-card a,
+  .flora-card a,
+  .preserve-item a,
+  .ngo-card a {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* ===== KEEP NGO CONTENT VISIBLE ===== */
+  .ngo-content {
+    display: block !important;
+    margin: 0.5em 0;
+  }
+
+  /* ===== REMOVE EMPTY SECTIONS ===== */
+  header, footer {
+    display: none !important;
+  }
+
+  /* ===== PAGE SETTINGS ===== */
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  /* ===== OPTIONAL HELPERS ===== */
+  .print-only {
+    display: block !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+}
